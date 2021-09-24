@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- <!DOCTYPE html> 是最短有效的文档声明。 -->
+<html>
+    <!-- 根元素 -->
+  <head>
+    <!-- 是一个容器，包含了想包含在HTML界面但不想展示出来的内容，关键字及页面描述等 -->
+    <meta charset="utf-8">
+    <!-- 设置文档的字符集编码 -->
+    <meta name="author" content="  ">
+    <meta name="description" content="T ">
+    <!-- name指明<meta>元素类型  content制定了实际内容 
+        在搜索引擎中搜索对应网址，可以在网页描述中看到description
+        -->
+    <title>测试页面</title>
+    <!-- 出现在浏览器标签上 -->
+    <link rel=" icon" href="icon.jpg">
+    <!-- 设置标签小图标 -->
+    
+  </head>
+<body>
+    <p id="test">这是将被链接的内容</p>
+    <h1>Mozilla 酷毙了！</h1>
+    <h2>Mozilla 酷毙了！</h2>
+    <em>这是一个斜体测试</em>
+
+    <p>这是一个<strong>粗体</strong>测试</p>
+    <h2>接下来展示列表</h2>
+    <ul>
+        <!-- Unordered list-->
+      <li>技术人员</li>
+      <li>思考者</li>
+      <li>建造者</li>
+    </ul>
+    <ol>
+        <!-- Ordered list-->
+        <li>技术人员</li>
+        <li>思考者</li>
+        <li>建造者</li>
+    </ol>
+
+    <h2>接下来展示列表嵌套</h2>
+    <ol>
+        <li>先用蛋白一个、盐半茶匙及淀粉两大匙搅拌均匀，调成“腌料”，鸡胸肉切成约一厘米见方的碎丁并用“腌料”搅拌均匀，腌渍半小时。</li>
+        <li>用酱油一大匙、淀粉水一大匙、糖半茶匙、盐四分之一茶匙、白醋一茶匙、蒜末半茶匙调拌均匀，调成“综合调味料”。</li>
+        <li>鸡丁腌好以后，色拉油下锅烧热，先将鸡丁倒入锅内，用大火快炸半分钟，炸到变色之后，捞出来沥干油汁备用。</li>
+        <li>在锅里留下约两大匙油，烧热后将切好的干辣椒下锅，用小火炒香后，再放入花椒粒和葱段一起爆香。随后鸡丁重新下锅，用大火快炒片刻后，再倒入“综合调味料”继续快炒。
+          <ul>
+            <li>如果你采用正宗川菜做法，最后只需加入花生米，炒拌几下就可以起锅了。</li>
+            <li>如果你在北方，可加入黄瓜丁、胡萝卜丁和花生米，翻炒后起锅。</li>
+          </ul>
+        </li>
+      </ol>
+
+    <h2>接下来展示各种强调</h2>
+      <!-- 学名 -->
+    <p>
+        红喉北蜂鸟（学名：<i>Archilocus colubris</i>）
+        是北美东部最常见的蜂鸟品种。
+    </p>
+    
+    <!-- 舶来词 -->
+    <p>
+        菜单上有好多舶来词汇，比如 <i lang="uk-latn">vatrushka</i>（东欧乳酪面包）,
+        <i lang="id">nasi goreng</i>（印尼炒饭）以及<i lang="fr">soupe à l'oignon</i>（法式洋葱汤）。
+    </p>
+    
+    <!-- 已知的错误书写 -->
+    <p>
+        总有一天我会改掉写<u style="text-decoration-line: underline; text-decoration-style: wavy;">措字</u>的毛病。
+    </p>
+    
+    <!-- 在一组指令中突出显示关键字 -->
+    <ol>
+        <li>
+        <b>切</b>下两片面包，
+        </li>
+        <li>
+        在两片面包中间<b>夹入</b>一片西红柿和一片生菜叶。
+        </li>
+    </ol>
+<!-- 
+    <i> 被用来传达传统上用斜体表达的意义：外国文字，分类名称，技术术语，一种思想……
+    <b> 被用来传达传统上用粗体表达的意义：关键字，产品名称，引导句……
+    <u> 被用来传达传统上用下划线表达的意义：专有名词，拼写错误…… -->
+    <h2>接下来测试图片</h2>
+    <h4>图片正常显示</h4>
+    <img src="icon.jpg" alt="这是一张图片">
+    <h4>图片不正常显示（显示alt描述内容）</h4>
+    <img src=" " alt="这是一张图片">
+    <br>
+    <br>
+    <h2>接下来练习链接</h2>
+    <p>文字链接
+        <a href="https://www.mozilla.org/zh-CN/about/manifesto/" title="文字链接名" target="_blank">
+          Mozilla 宣言</a>。          
+        <!-- target="_blank"属性则表示在新建标签页中显示 -->       
+    </p>
+    
+    <p>图片链接<br>
+      <a href="https://www.mozilla.org/zh-CN/about/manifesto/" title="图片链接" target="_blank">
+        <img src="icon.jpg" alt="这是一张图片">
+      </a>。          
+      <!-- target="_blank"属性则表示在新建标签页中显示 -->       
+     </p>
+
+    <h2>接下来练习文档链接</h2>
+    <p>接下来我将链接：<a href="#test">链接A</a></p>
+    <br>
+    <h2>接下来展示缩略语</h2>
+    <p>我们使用 <abbr title="超文本标记语言（Hyper text Markup Language）">HTML</abbr> 来组织网页文档。</p>
+    <p>第 33 届 <abbr title="夏季奥林匹克运动会">奥运会</abbr> 将于 2024 年 8 月在法国巴黎举行。</p>
+    <br>
+    <h2>接下来练习上标和下标</h2>
+    <!-- <sub>上标   <sup>下标 -->
+    <p>咖啡因的化学方程式是 C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>。</p>
+    <p>如果 x<sup>2</sup> 的值为 9，那么 x 的值必为 3 或 -3。</p>
+    <br>
+    
+
+
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+</body>   
+</html>
