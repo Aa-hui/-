@@ -4,6 +4,8 @@
 >
 > [参考：学习HTML：指南与教程](https://developer.mozilla.org/zh-CN/docs/Learn/HTML)
 
+#### 基础知识
+
 - `<head></head>` — `<head>` 元素。该元素的内容对用户**不可见**，其中包含例如面向搜索引擎的搜索关键字（[keywords](https://developer.mozilla.org/zh-CN/docs/Glossary/Keyword)）、页面描述、CSS 样式表和字符编码声明等。
 
 
@@ -21,4 +23,12 @@
 - URL 统一资源定位系统
 
   URL可以指向HTML文件、文本文件、图像、文本文档、视频和音频文件以及可以在网络上保存的任何其他内容。 如果浏览器不知道如何显示或处理文件，它会询问您是否要打开文件（需要选择合适的本地应用来打开或处理文件）或下载文件（以后处理它）。
+
+
+
+#### 网站架构
+
+为了实现语义化标记，HTML 提供了明确这些区段的专用标签，例如：
+
+![image-20210924202013886](README.assets/image-20210924202013886.png)
 
