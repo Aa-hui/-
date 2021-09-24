@@ -6,6 +6,7 @@
 
 - `<head></head>` — `<head>` 元素。该元素的内容对用户**不可见**，其中包含例如面向搜索引擎的搜索关键字（[keywords](https://developer.mozilla.org/zh-CN/docs/Glossary/Keyword)）、页面描述、CSS 样式表和字符编码声明等。
 
+
 - HTML不是编程语言，是一种告知浏览器如何组织页面的标记语言
 - HTML由一系列元素构成，标签不区分大小写，为规范，**均使用小写**
 - 元素：一般由开始标签、内容、结束标签共同组成
