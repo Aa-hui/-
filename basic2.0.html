@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Thanks to MDN ">
+    <title>多媒体测试</title>
+  </head>
+  <body>
+    <h1>Below is a video that will play in all modern browsers</h1>
+    <br>
+
+    <h2>接下来使用video标签来练习</h2>
+    <video controls width="400" height="300"
+        loop muted
+       poster="icon.jpg">
+    <!-- 
+        controls 控制工具
+        width height 设置长宽
+        autoplay 自动播放
+        loop 循环播放
+        muted 默认关闭声音
+        poster 封面    
+    -->
+      <source src="video_rabbit.mp4" type="video/mp4" >
+      <source src="video_rabbit.webm" type="video/webm">
+      <p>Your browser doesn't support HTML5 video. Here is a <a href="video_rabbit.webm">link to the video</a> instead.</p> 
+    <!-- 后备内容 — 当浏览器不支持 <video> 标签的时候，就会显示这段内容 -->
+    </video>
+    <br>
+
+    <h2>接下来使用audio标签来练习</h2>
+    <audio controls
+      muted>
+      <source src="viper.mp3" type="audio/mp3">
+      <source src="viper.ogg" type="audio/ogg">
+      <p>你的浏览器不支持 HTML5 音频，可点击<a href="viper.mp3">此链接</a>收听。</p>
+    </audio>
+    <br>
+
+    <h2>接下来使用video标签来练习<strong>音轨文本</strong></h2>
+    <p>好像失败了，后续在研究</p>
+    <video controls width="400" height="300"
+        loop muted
+       poster="icon.jpg">
+      <source src="video_rabbit.mp4" type="video/mp4" >
+      <source src="video_rabbit.webm" type="video/webm">
+      <track kind="subtitles" src="fake.vtt" srclang="en">
+    </video>
+    <br>
+
+  </body>
+</html>
