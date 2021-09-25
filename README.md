@@ -85,3 +85,25 @@ frameborder 如果设置为1，则会告诉浏览器在此框架和其他框架�
 
 ![image-20210925175012759](README.assets/image-20210925175012759.png)
 
+#### 矢量图
+
+位图和矢量图的区别
+
+- 位图使用像素网格来定义 — 一个位图文件精确得包含了每个像素的位置和它的色彩信息。流行的位图格式包括 Bitmap (`.bmp`), PNG (`.png`), JPEG (`.jpg`), and GIF (`.gif`.)
+- 矢量图使用算法来定义 — 一个矢量图文件包含了图形和路径的定义，电脑可以根据这些定义计算出当它们在屏幕上渲染时应该呈现的样子。 [SVG](https://developer.mozilla.org/zh-CN/docs/Glossary/SVG) 格式可以让我们创造用于 Web 的精彩的矢量图形。
+
+[SVG](https://developer.mozilla.org/zh-CN/docs/Web/SVG) 是用于描述矢量图像的[XML](https://developer.mozilla.org/zh-CN/docs/Glossary/XML)语言。 它基本上是像HTML一样的标记，只是你有许多不同的元素来定义要显示在图像中的形状，以及要应用于这些形状的效果。 SVG用于标记图形，而不是内容。 
+
+```html
+<!--示例代码：-->
+<svg version="1.1"
+     baseProfile="full"
+     width="300" height="200"
+     xmlns="http://www.w3.org/2000/svg">
+    <!-- xmlns属性定义了一个命名空间，浏览器会将此命名空间用于该属性所在元素内的所有内容 -->
+    <rect width="100%" height="100%" fill="black" />
+    <circle cx="150" cy="100" r="90" fill="blue" />
+</svg>
+
+```
+
