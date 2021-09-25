@@ -66,3 +66,22 @@ HTML5提供了WebVTT格式，使用`<track>标签`
 </video>
 ```
 
+####  内嵌框架
+
+如果想要将B站的视频嵌入自己的HTML中，简单的复制网址是不可行的
+
+```html
+<!-- 参考示例代码 -->
+<iframe src="https://player.bilibili.com/player.html?aid=19390801&cid=31621681&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> 
+<!-- scrolling 滚动条
+frameborder 如果设置为1，则会告诉浏览器在此框架和其他框架之间绘制边框，这是默认行为。0删除边框  
+-->
+<p>改革春风吹满地</p>
+```
+
+发现`src`中的链接开头为`player`
+
+通过分享链接可以得到**嵌入代码**（这部分后头要深入了解一下）
+
+![image-20210925175012759](README.assets/image-20210925175012759.png)
+
