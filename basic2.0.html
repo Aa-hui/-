@@ -9,12 +9,13 @@
     <h1>Below is a video that will play in all modern browsers</h1>
     <br>
 
+
     <h2>接下来使用video标签来练习</h2>
     <video controls width="200" height="150"
         loop muted
        poster="icon.jpg">
     <!-- 
-        controls 控制工具
+        controls 为用户展示控制工具
         width height 设置长宽
         autoplay 自动播放
         loop 循环播放
@@ -26,7 +27,7 @@
       <p>Your browser doesn't support HTML5 video. Here is a <a href="video_rabbit.webm">link to the video</a> instead.</p> 
     <!-- 后备内容 — 当浏览器不支持 <video> 标签的时候，就会显示这段内容 -->
     </video>
-    <br>
+    <br> 
 
     <h2>接下来使用audio标签来练习</h2>
     <audio controls
@@ -39,6 +40,7 @@
 
     <h2>接下来使用video标签来练习<strong>音轨文本</strong></h2>
     <p>好像失败了，后续在研究</p>
+    <!-- TODO: 后续研究音轨文本 -->
     <video controls width="200" height="150"
         loop muted
        poster="icon.jpg">
@@ -47,7 +49,10 @@
       <track kind="subtitles" src="fake.vtt" srclang="en">
     </video>
     <br>
+
+
     <h2>接下来练习内嵌框架</h2>
+    <!-- TODO:常见的有三种形式，后需要补充了解区别iframe、object、embed引用区别 -->
     <iframe src="//player.bilibili.com/player.html?aid=712909579&bvid=BV1hD4y1X7Rm&cid=330929291&page=1" 
     scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true"
     width="800" height="450"  > </iframe>
@@ -56,6 +61,8 @@
     -->
     <p><strong>《原神》角色演示-「钟离：听书人」</strong></p>
     <br>
+
+
     <h2>接下来使用object嵌入PDF</h2>
     <object data="my.pdf" type="application/pdf"
         width="400" height="600" typemustmatch>
@@ -63,19 +70,33 @@
     </object>
     <br>
     <br>
+
+
     <h2>接下来练习插入矢量图形</h2>
+    <!-- 
+        矩形 <rect>
+        圆形 <circle>
+        椭圆 <ellipse>
+        线 <line>
+        折线 <polyline>
+        多边形 <polygon>
+        路径 <path>
+     -->
     <svg version="1.1"
      baseProfile="full"
      width="300" height="200"
      xmlns="http://www.w3.org/2000/svg">
+     <!-- 定义矢量图的基本信息，后续用于定义长宽的百分数即基于此处的定义 -->
      <!-- xmlns属性定义了一个命名空间，浏览器会将此命名空间用于该属性所在元素内的所有内容 -->
       <rect width="100%" height="100%" fill="black" />
-      <circle cx="100%" cy="100" r="100" fill="yellow" />
+      <circle cx="100%" cy="50%" r="100" fill="yellow" />
+      <!-- cx,cy为圆心的坐标  此处，cy设置为50%和设置成100 是一个意思 参照上两行内容-->
     </svg>
     <br>
     <svg width="50%" height="100%">
       <rect width="100%" height="100%" fill="red" />
       <circle cx="100%" cy="100%" r="150" fill="blue" stroke="black" />
+      
       <polygon points="120,0 240,225 0,225" fill="green"/>
       <text x="50" y="100" font-family="Verdana" font-size="55"
             fill="white" stroke="black" stroke-width="2">
@@ -84,8 +105,18 @@
     </svg>
     <br>
     <br>
+
+
     <h2>接下来练习的是表格的相关内容</h2>
-    <table border="1">
+    <table border="10">
+      <!-- border设置边框 -->
+      <!-- 
+        <td> 标签定义 HTML 表格中的标准单元格。
+        HTML 表格有两类单元格：
+        表头单元 - 包含头部信息（由 th 元素创建）
+        标准单元 - 包含数据（由 td 元素创建）
+        td 元素中的文本一般显示为正常字体且左对齐。
+       -->
       <tr>
         <th scope="col">Month</th>
         <th scope="col">Savings</th>
